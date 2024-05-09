@@ -77,7 +77,7 @@ else:
     ext_modules = [ext1]
 
 numpy.distutils.core.setup(
-    name='wrf-python',
+    name='wrf-python-SRHedit',
     author="Bill Ladwig",
     maintainer="GeoCAT",
     maintainer_email="geocat@ucar.edu",
