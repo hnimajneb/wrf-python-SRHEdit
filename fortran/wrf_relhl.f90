@@ -112,8 +112,8 @@ SUBROUTINE DCALRELHL(u, v, ght, ter, lat, top, sreh, miy, mjx, mkzh)
                 bdr = bdr - 360.D0
             ENDIF
 
-            cu = -bsp*SIN(bdr * RAD_PER_DEG)
-            cv = -bsp*COS(bdr * RAD_PER_DEG)
+            cu = 0
+            cv = 0
             sum = 0.D0
             DO k = mkzh-1, ktop, -1
                 x = ((u(i,j,k) - cu)*(v(i,j,k) - v(i,j,k+1))) - &
